@@ -1,0 +1,18 @@
+{
+"type": "FeatureCollection",
+"name": "reverberation",
+"crs": { "type": "name", "properties": { "name": "urn:ogc:def:crs:OGC:1.3:CRS84" } },
+"features": [
+{ "type": "Feature", "properties": { "id": "Microsoft Corporation", "latitude": 47.643543, "longitude": -122.130821 }, "geometry": { "type": "Point", "coordinates": [ -122.130821, 47.643543 ] } },
+{ "type": "Feature", "properties": { "id": "Alphabet Inc.", "latitude": 37.422131, "longitude": -122.084801 }, "geometry": { "type": "Point", "coordinates": [ -122.084801, 37.422131 ] } },
+{ "type": "Feature", "properties": { "id": "Booking Holdings Inc", "latitude": 41.0930242, "longitude": -73.4539645 }, "geometry": { "type": "Point", "coordinates": [ -73.4539645, 41.0930242 ] } },
+{ "type": "Feature", "properties": { "id": "Lockheed Martin Corporation", "latitude": 39.030957, "longitude": -77.1388991 }, "geometry": { "type": "Point", "coordinates": [ -77.1388991, 39.030957 ] } },
+{ "type": "Feature", "properties": { "id": "RTX Corporation", "latitude": 38.8865, "longitude": -77.0945 }, "geometry": { "type": "Point", "coordinates": [ -77.0945, 38.8865 ] } },
+{ "type": "Feature", "properties": { "id": "BlackRock", "latitude": 40.7545, "longitude": -74.0005 }, "geometry": { "type": "Point", "coordinates": [ -74.0005, 40.7545 ] } },
+{ "type": "Feature", "properties": { "id": "Raytheon Company", "latitude": 38.88, "longitude": -77.1 }, "geometry": { "type": "Point", "coordinates": [ -77.1, 38.88 ] } },
+{ "type": "Feature", "properties": { "id": "The Boeing Company", "latitude": 41.8841353, "longitude": -87.6388427 }, "geometry": { "type": "Point", "coordinates": [ -87.6388427, 41.8841353 ] } },
+{ "type": "Feature", "properties": { "id": "Amazon.com, Inc.", "latitude": 47.615257, "longitude": -122.338356 }, "geometry": { "type": "Point", "coordinates": [ -122.338356, 47.615257 ] } },
+{ "type": "Feature", "properties": { "id": "HEICO Corporation", "latitude": 26.0248413, "longitude": -80.1688478 }, "geometry": { "type": "Point", "coordinates": [ -80.1688478, 26.0248413 ] } },
+{ "type": "Feature", "properties": { "id": "Tel Aviv University", "latitude": 32.111767, "longitude": 34.801361 }, "geometry": { "type": "Point", "coordinates": [ 34.801361, 32.111767 ] } }
+]
+}
