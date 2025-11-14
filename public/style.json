@@ -561,6 +561,25 @@
       "type": "line"
     },
     {
+      "filter": [
+        "all",
+        ["!=", "brunnel", "tunnel"],
+        ["==", "$type", "Polygon"],
+        ["!=", "intermittent", 1]
+      ],
+      "id": "water",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "rgba(12, 12, 12, 1)"
+      },
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "type": "fill"
+    },
+    {
       "id": "building_fill",
       "layout": {
         "visibility": "visible"
@@ -1148,25 +1167,6 @@
       "source": "openmaptiles",
       "source-layer": "waterway",
       "type": "line"
-    },
-    {
-      "filter": [
-        "all",
-        ["!=", "brunnel", "tunnel"],
-        ["==", "$type", "Polygon"],
-        ["!=", "intermittent", 1]
-      ],
-      "id": "water",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-antialias": true,
-        "fill-color": "rgba(0, 0, 0, 1)"
-      },
-      "source": "openmaptiles",
-      "source-layer": "water",
-      "type": "fill"
     },
     {
       "id": "nyc2024building",
