@@ -19,7 +19,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL"
+      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=g46fe7633b5463e2b"
     },
     "nyc1936outdoor": {
       "type": "geojson",
@@ -97,7 +97,7 @@
       "data": "https://raw.githubusercontent.com/sr4380/astro-maplibre-template/main/public/data/idf%20headquarter.geojson"
     }
   },
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=get_your_own_OpIi9ZULNHzrESv6T2vL",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=46fe7633b5463e2b",
   "layers": [
     {
       "id": "background",
