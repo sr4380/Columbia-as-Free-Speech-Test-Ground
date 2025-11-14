@@ -90,6 +90,11 @@
       "type": "geojson",
       "cluster": false,
       "data": "https://raw.githubusercontent.com/sr4380/astro-maplibre-template/main/public/data/gaza%20destruction.geojson"
+    },
+    "idf": {
+      "type": "geojson",
+      "cluster": false,
+      "data": "https://raw.githubusercontent.com/sr4380/astro-maplibre-template/main/public/data/idf%20headquarter.geojson"
     }
   },
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=get_your_own_OpIi9ZULNHzrESv6T2vL",
@@ -1162,11 +1167,14 @@
       "type": "symbol"
     },
     {
-      "id": "nyc1936outdoor",
-      "type": "fill",
-      "source": "nyc1936outdoor",
+      "id": "nyc2024building",
+      "type": "fill-extrusion",
+      "source": "nyc2024building",
       "paint": {
-        "fill-color": "rgba(134, 193, 157, 1)"
+        "fill-extrusion-color": "rgba(212, 118, 118, 1)",
+        "fill-extrusion-height": 28,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 1
       },
       "layout": {
         "visibility": "visible"
@@ -1174,13 +1182,27 @@
     },
     {
       "id": "nyc1968occupied building",
-      "type": "fill",
+      "type": "fill-extrusion",
       "source": "nyc1968occupied building",
       "paint": {
-        "fill-color": "rgba(210, 27, 27, 1)"
+        "fill-extrusion-color": "rgba(201, 126, 126, 1)",
+        "fill-extrusion-height": 25,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 1
       },
       "layout": {
         "visibility": "visible"
+      }
+    },
+    {
+      "id": "nyc1985building",
+      "type": "fill-extrusion",
+      "source": "nyc1985building",
+      "paint": {
+        "fill-extrusion-color": "rgba(220, 151, 151, 1)",
+        "fill-extrusion-height": 25,
+        "fill-extrusion-base": 0,
+        "fill-extrusion-opacity": 1
       }
     },
     {
@@ -1188,7 +1210,8 @@
       "type": "fill",
       "source": "nyc1968outdoor",
       "paint": {
-        "fill-color": "rgba(177, 210, 190, 1)"
+        "fill-color": "rgba(196, 226, 208, 1)",
+        "fill-opacity": 0.5
       },
       "layout": {
         "visibility": "visible"
@@ -1199,8 +1222,8 @@
       "type": "fill",
       "source": "nyc1968visibility",
       "paint": {
-        "fill-color": "rgba(234, 196, 24, 1)",
-        "fill-opacity": 0.3
+        "fill-color": "rgba(222, 209, 154, 1)",
+        "fill-opacity": 0.2
       },
       "layout": {
         "visibility": "visible"
@@ -1212,7 +1235,7 @@
       "source": "nyc2024visibility",
       "paint": {
         "fill-color": "rgba(234, 234, 167, 1)",
-        "fill-opacity": 0.3
+        "fill-opacity": 0.2
       }
     },
     {
@@ -1220,15 +1243,20 @@
       "type": "fill",
       "source": "nyc2024outdoor",
       "paint": {
-        "fill-color": "rgba(156, 208, 178, 1)"
+        "fill-color": "rgba(196, 230, 211, 1)",
+        "fill-opacity": 0.5
       }
     },
     {
-      "id": "nyc2024building",
+      "id": "nyc1936outdoor",
       "type": "fill",
-      "source": "nyc2024building",
+      "source": "nyc1936outdoor",
       "paint": {
-        "fill-color": "rgba(197, 39, 39, 1)"
+        "fill-color": "rgba(191, 230, 206, 1)",
+        "fill-opacity": 0.5
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -1236,15 +1264,8 @@
       "type": "fill",
       "source": "nyc1985outdoor",
       "paint": {
-        "fill-color": "rgba(195, 218, 192, 1)"
-      }
-    },
-    {
-      "id": "nyc1985building",
-      "type": "fill",
-      "source": "nyc1985building",
-      "paint": {
-        "fill-color": "rgba(218, 46, 46, 1)"
+        "fill-color": "rgba(195, 218, 192, 1)",
+        "fill-opacity": 0.5
       }
     },
     {
@@ -1252,8 +1273,8 @@
       "type": "fill",
       "source": "nyc1985visibility",
       "paint": {
-        "fill-color": "rgba(230, 228, 165, 1)",
-        "fill-opacity": 0.3
+        "fill-color": "rgba(234, 233, 174, 1)",
+        "fill-opacity": 0.2
       }
     },
     {
@@ -1263,6 +1284,9 @@
       "paint": {
         "circle-color": "rgba(236, 39, 13, 1)",
         "circle-radius": 8
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -1272,6 +1296,9 @@
       "paint": {
         "circle-color": "rgba(243, 140, 9, 1)",
         "circle-radius": 10
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -1282,6 +1309,20 @@
         "circle-stroke-color": "rgba(224, 54, 33, 1)",
         "circle-radius": 10,
         "circle-color": "rgba(243, 57, 14, 1)"
+      },
+      "layout": {
+        "visibility": "visible"
+      }
+    },
+    {
+      "id": "idf",
+      "type": "circle",
+      "source": "idf",
+      "paint": {
+        "circle-color": "rgba(10, 45, 230, 1)"
+      },
+      "layout": {
+        "visibility": "visible"
       }
     },
     {
@@ -1290,6 +1331,32 @@
       "source": "gazaeducation",
       "paint": {
         "circle-color": "rgba(216, 42, 42, 1)"
+      }
+    },
+    {
+      "id": "arc-layer",
+      "type": "line",
+      "source": "expelled",
+      "paint": {
+        "line-color": "rgba(232, 8, 108, 1)"
+      }
+    },
+    {
+      "id": "arcs-layer",
+      "type": "line",
+      "source": "reverberation",
+      "paint": {
+        "line-color": "rgba(152, 223, 243, 1)",
+        "line-width": 3,
+        "line-opacity": 0.6
+      }
+    },
+    {
+      "id": "arc-layersg",
+      "type": "line",
+      "source": "gazaeducation",
+      "paint": {
+        "line-color": "rgba(236, 139, 235, 1)"
       }
     }
   ],
