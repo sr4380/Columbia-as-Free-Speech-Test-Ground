@@ -19,7 +19,7 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=eBwz9oSyXSmQRvIElGcB"
+      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=get_your_own_OpIi9ZULNHzrESv6T2vL"
     },
     "nyc1936outdoor": {
       "type": "geojson",
@@ -97,7 +97,7 @@
       "data": "https://raw.githubusercontent.com/sr4380/astro-maplibre-template/main/public/data/idf%20headquarter.geojson"
     }
   },
-  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=eBwz9oSyXSmQRvIElGcB",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=get_your_own_OpIi9ZULNHzrESv6T2vL",
   "layers": [
     {
       "id": "background",
@@ -230,36 +230,6 @@
       "source-layer": "landuse",
       "type": "fill",
       "layout": {"visibility": "none"}
-    },
-    {
-      "filter": [
-        "all",
-        ["!=", "brunnel", "tunnel"],
-        ["==", "$type", "Polygon"],
-        ["!=", "intermittent", 1]
-      ],
-      "id": "water",
-      "layout": {
-        "visibility": "visible"
-      },
-      "paint": {
-        "fill-antialias": true,
-        "fill-color": "rgba(0, 0, 0, 1)"
-      },
-      "source": "openmaptiles",
-      "source-layer": "water",
-      "type": "fill"
-    },
-    {
-      "filter": [
-        "all",
-        ["!=", "class", "river"]
-      ],
-      "id": "waterway",
-      "minzoom": 12,
-      "source": "openmaptiles",
-      "source-layer": "waterway",
-      "type": "line"
     },
     {
       "filter": [
@@ -1165,6 +1135,36 @@
       "source": "openmaptiles",
       "source-layer": "place",
       "type": "symbol"
+    },
+    {
+      "filter": [
+        "all",
+        ["!=", "class", "river"]
+      ],
+      "id": "waterway",
+      "minzoom": 12,
+      "source": "openmaptiles",
+      "source-layer": "waterway",
+      "type": "line"
+    },
+    {
+      "filter": [
+        "all",
+        ["!=", "brunnel", "tunnel"],
+        ["==", "$type", "Polygon"],
+        ["!=", "intermittent", 1]
+      ],
+      "id": "water",
+      "layout": {
+        "visibility": "visible"
+      },
+      "paint": {
+        "fill-antialias": true,
+        "fill-color": "rgba(0, 0, 0, 1)"
+      },
+      "source": "openmaptiles",
+      "source-layer": "water",
+      "type": "fill"
     },
     {
       "id": "nyc2024building",
