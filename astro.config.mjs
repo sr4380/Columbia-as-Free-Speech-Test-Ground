@@ -6,6 +6,6 @@ import tailwind from "@astrojs/tailwind";
 
 export default defineConfig({
   site: "https://sr4380.github.io",
-  base: "astro-maplibre-template",
+  base: "Columbia as Free Speech Test Ground",
   integrations: [mdx(), sitemap(), tailwind()],
 });
