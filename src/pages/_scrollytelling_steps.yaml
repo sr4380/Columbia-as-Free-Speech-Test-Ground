@@ -3,15 +3,50 @@
   zoom: 10
   pitch: 0
   bearing: 0
-  description: Welcome to the map scrollytelling app. You can set position, zoom, pitch, and bearing via the top-level props.
-
-- title: Section Title - Squirrels in Central Park
+  description: A Century of Protests, suppression and student resistance at Columbia University. Scroll Down to explore key moments mapped onto the campus.
+  Media: ./img/intro.jpg
+  Position: center
+  
+  title: 1917 World War I- Columbia Calls
   center: [-73.96778, 40.78376]
   zoom: 14
   pitch: 0
   bearing: 20
-  description: Now we zoom in. A layer is added from a geojson  Layer paint properties are passed, and layers are set to turn off when you continue scrolling via the `persist:false` attribute.
+  description: In 1917, during World War I, speaking against the war was considered treason. Columbia students were arrested for distributing antiwar leaflets, and faculty members faced dismissal for expressing political dissent.
+  Media:
+
+- title: 1936 Anti-Nazi Protests
+  center: [-73.96778, 40.78376]
+  zoom: 14
+  pitch: 0
+  bearing: 20
+  description: In 1936, Columbia students protested President Nicholas Murray Butler's ties to Nazi Germany, as the German government was dismissing Jewish professors from universities, forcing many renowned scientists, including Albert Einstein, to flee.
+  Media: 
   
+  title: 1968 Anti-Vietnum War Protests & Gym Crow Uprising
+  center: [-73.96778, 40.78376]
+  zoom: 14
+  pitch: 0
+  bearing: 20
+  description: The 1968 protests confronted the University's involvement in Military research and segregationst gym construction plans.
+  Media:
+
+  title: 1985 Anti-Aperthied SouthAfrica Protests
+  center: [-73.96778, 40.78376]
+  zoom: 14
+  pitch: 0
+  bearing: 20
+  description: Columbia Students demanded divestment from Companies supporting appertheid South Africa.
+  Media:
+
+  title: 2024 Pro-Palestinian Encampment
+  center: [-73.96778, 40.78376]
+  zoom: 14
+  pitch: 0
+  bearing: 20
+  description: Recent Encampments and disciplinary actions highlight the ongoing struggle for Free Speech and Academic Freedom on Campus.
+  Media: 
+
   layers:
   # id of layer
   - id: 'squirrel-census'
