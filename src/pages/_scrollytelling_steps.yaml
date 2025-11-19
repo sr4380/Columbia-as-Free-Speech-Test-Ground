@@ -3,7 +3,7 @@
   zoom: 10
   pitch: 0
   bearing: 0
-  description: A Century of Protests, suppression and student resistance at Columbia University. Scroll Down to explore key moments mapped onto the campus.
+  description: Explore a century of student activism, protests, and the fight for free expression at Columbia University. Scroll down to see key moments mapped onto the campus from 1917 World War I, when speaking against the war was labeled treason and students were arrested for distributing antiwar leaflets while faculty were dismissed for political dissent; to the 1936 anti-Nazi protests, the 1968 anti-Vietnam War and Gym Crow uprising, the 1985 anti-apartheid movement, and today's Gaza solidarity movement.
   media: ./img/intro.jpg
   position: center
   
@@ -20,6 +20,17 @@
   pitch: 0
   bearing: 20
   description: In 1936, Columbia students protested President Nicholas Murray Butler's ties to Nazi Germany, as the German government was dismissing Jewish professors from universities, forcing many renowned scientists, including Albert Einstein, to flee.
+  layers:
+    - id: '1936outdoor'
+      url: './data/1936 newyork city outdoor.geojson'
+      type: 'fill'
+      data-type: 'geojson'
+      layer-type: 'fill'
+      persist: true
+      paint:
+        fill-color: 'rgba(191, 230, 206, 1)'
+        fill-opacity: 0.5
+
   
 - title: 1968 Anti-Vietnum War Protests & Gym Crow Uprising
   center: [-73.96778, 40.78376]
@@ -27,6 +38,38 @@
   pitch: 0
   bearing: 20
   description: The 1968 protests confronted the University's involvement in Military research and segregationst gym construction plans.
+  layers:
+    - id: '1968outdoor'
+      url: '/data/1968 outdoor.geojson'
+      type: 'fill'
+      data-type: 'geojson'
+      layer-type: 'fill'
+      persist: true
+      paint:
+        fill-color: 'rgba(196, 226, 208, 1)'
+        fill-opacity: 0.5
+
+    - id: '1968visibility'
+      url: './data/1968 visibility.geojson'
+      type: 'fill'
+      data-type: 'geojson'
+      layer-type: 'fill'
+      persist: true
+      paint:
+        fill-color: 'rgba(222, 209, 154, 1)'
+        fill-opacity: 0.2
+
+    - id: '1968buildingoccupancy'
+      url: './data/1968 building + radio 4326.geojson'
+      type: 'fill-extrusion'
+      data-type: 'geojson'
+      layer-type: 'fill-extrusion'
+      persist: true
+      paint:
+        fill-extrusion-color: 'rgba(201, 126, 126, 1)'
+        fill-extrusion-height: 25
+        fill-extrusion-base: 0
+        fill-extrusion-opacity: 1
 
 - title: 1985 Anti-Aperthied SouthAfrica Protests
   center: [-73.96778, 40.78376]
@@ -34,6 +77,38 @@
   pitch: 0
   bearing: 20
   description: Columbia Students demanded divestment from Companies supporting appertheid South Africa.
+  layers:
+- id: '1985buildingoccupancy'
+  url: './data/1985 building occupancy 4326.geojson'
+  type: 'fill-extrusion'
+  data-type: 'geojson'
+  layer-type: 'fill-extrusion'
+  persist: true
+  paint:
+        fill-extrusion-color: 'rgba(220, 151, 151, 1)'
+        fill-extrusion-height: 25
+        fill-extrusion-base: 0
+        fill-extrusion-opacity: 1
+
+- id: '1985outdoor'
+  url: './data/1985 outdoor 4326.geojson'
+  type: 'fill'
+  data-type: 'geojson'
+  layer-type: 'fill'
+  persist: true
+  paint:
+        fill-color: 'rgba(195, 218, 192, 1)'
+        fill-opacity: 0.5
+
+- id: '1985visibility'
+  url: './data/1985 visibility 4326.geojson'
+  type: 'fill'
+  data-type: 'geojson'
+  layer-type: 'fill'
+  persist: true
+  paint:
+        fill-color: 'rgba(234, 233, 174, 1)'
+        fill-opacity: 0.2
 
 - title: 2024 Pro-Palestinian Encampment
   center: [-73.96778, 40.78376]
@@ -41,6 +116,37 @@
   pitch: 0
   bearing: 20
   description: Recent Encampments and disciplinary actions highlight the ongoing struggle for Free Speech and Academic Freedom on Campus.
+  layers:
+- id: '2024building'
+  url: './data/2024 building occupy latest 4326.geojson'
+  type: 'fill-extrusion'
+  data-type: 'geojson'
+  layer-type: 'fill-extrusion'
+  persist: true
+  paint:
+        fill-extrusion-color: 'rgba(212, 118, 118, 1)'
+        fill-extrusion-height: 28
+        fill-extrusion-base: 0
+        fill-extrusion-opacity: 1
 
+- id: '2024visibility'
+  url: './data/2024 visibility 4326.geojson'
+  type: 'fill'
+  data-type: 'geojson'
+  layer-type: 'fill'
+  persist: true
+  paint:
+        fill-color: 'rgba(234, 234, 167, 1)'
+        fill-opacity: 0.2
+
+- id: '2024outdoor'
+  url: './data/2024 outdoor 4326.geojson'
+  type: 'fill'
+  data-type: 'geojson'
+  layer-type: 'fill'
+  persist: true
+  paint:
+        fill-color: 'rgba(196, 230, 211, 1)'
+        fill-opacity: 0.5
 
 
