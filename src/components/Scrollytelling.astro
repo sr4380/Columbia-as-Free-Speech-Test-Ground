@@ -231,10 +231,13 @@ const layersJson = layers ? JSON.stringify(layers) : undefined;
           }
           class:list={[step.position ? step.position : "lefty", "step"]}
         >
-          <div class="step-content">
+          <div class={`step-content flex flex-col md:flex-row items-center gap-6 ${step.position === 'right' ? 'md:flex-row-reverse' : ''}`}>
+  <div class="text-content flex-1">
             <h2>{step.title}</h2>
             <p>{step.description}</p>
-            {step.media ? <img src={step.media} alt={step.title} /> : null}
+            {step.media ? (
+    <img src={step.media} alt={step.title} class="media flex-1 max-w-sm" style={`opacity:${step.mediaOpacity ?? 1}`} />
+  ) : null}
           </div>
         </section>
       ))
