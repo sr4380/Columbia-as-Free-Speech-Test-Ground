@@ -4,10 +4,10 @@
   pitch: 0
   bearing: 0
   description: A Century of Protests, suppression and student resistance at Columbia University. Scroll Down to explore key moments mapped onto the campus.
-  Media: ./img/intro.jpg
-  Position: center
+  media: ./img/intro.jpg
+  position: center
   
-  title: 1917 World War I- Columbia Calls
+- title: 1917 World War I- Columbia Calls
   center: [-73.96778, 40.78376]
   zoom: 14
   pitch: 0
@@ -21,69 +21,26 @@
   bearing: 20
   description: In 1936, Columbia students protested President Nicholas Murray Butler's ties to Nazi Germany, as the German government was dismissing Jewish professors from universities, forcing many renowned scientists, including Albert Einstein, to flee.
   
-  title: 1968 Anti-Vietnum War Protests & Gym Crow Uprising
+- title: 1968 Anti-Vietnum War Protests & Gym Crow Uprising
   center: [-73.96778, 40.78376]
   zoom: 14
   pitch: 0
   bearing: 20
   description: The 1968 protests confronted the University's involvement in Military research and segregationst gym construction plans.
 
-  title: 1985 Anti-Aperthied SouthAfrica Protests
+- title: 1985 Anti-Aperthied SouthAfrica Protests
   center: [-73.96778, 40.78376]
   zoom: 14
   pitch: 0
   bearing: 20
   description: Columbia Students demanded divestment from Companies supporting appertheid South Africa.
 
-  title: 2024 Pro-Palestinian Encampment
+- title: 2024 Pro-Palestinian Encampment
   center: [-73.96778, 40.78376]
   zoom: 14
   pitch: 0
   bearing: 20
   description: Recent Encampments and disciplinary actions highlight the ongoing struggle for Free Speech and Academic Freedom on Campus.
 
-  layers:
-  # id of layer
-  - id: 'squirrel-census'
-  # path to dataset 
-  # note anything uploaded in the public/data folder will be uploaded to your site at url/data/file.png
-    url: './data/squirrel20241021.geojson'
-  # type of symbol
-    type: 'circle'
-  # type of symbol
-    data-type: 'geojson'
-    layer-type: 'circle'
-    persist: true
-    paint:
-      circle-radius: 5
-      circle-color: '#826260'
-      circle-opacity: 0.8
-
-- title: Polygon Layer
-  # center: [-73.96778, 40.78376]
-  center: [-74.00739, 40.67930]
-  zoom: 14
-  pitch: 0
-  bearing: 20
-  description: Now we zoom to a new location. And add a polygon layer of the innundation zone from Hurricane Sandy via GeoJSON endpoint. Layer paint properties are passed (notice they are different from the syntax for the point layer). 
-  layers:
-  - id: 'sandy'
-    url: 'https://data.cityofnewyork.us/resource/5xsi-dfpx.geojson'
-    type: 'fill'
-    data-type: 'geojson'
-    layer-type: 'fill'
-    persist: false
-    paint:
-      fill-color: '#c1e2e6'
-      fill-opacity: 0.8
 
 
-
-- title: London
-  center: [-0.1278, 51.5074]
-  zoom: 8
-  pitch: 30
-  bearing: -10
-  description: You can change the position of the overlay div using the position attribute, and can add images using the media attribute.
-  media: https://img.atlasobscura.com/OGZXBPY6hP2AXBi-M97MjAYHr46wOlG4iPA1pz2owEI/rt:fit/h:390/q:81/sm:1/scp:1/ar:1/aHR0cHM6Ly9hdGxh/cy1kZXYuczMuYW1h/em9uYXdzLmNvbS91/cGxvYWRzL3BsYWNl/X2ltYWdlcy85NTI3/NzEyMWY1NWM5ZWIx/ZDRfMTM3ODE0MjA1/OTNfMjQ0ZmUxZDJj/OV9rLmpwZw.jpg
-  position: right
