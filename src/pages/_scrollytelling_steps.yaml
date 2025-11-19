@@ -22,7 +22,7 @@
   description: In 1936, Columbia students protested President Nicholas Murray Butler's ties to Nazi Germany, as the German government was dismissing Jewish professors from universities, forcing many renowned scientists, including Albert Einstein, to flee.
   layers:
     - id: '1936outdoor'
-      url: './data/1936 newyork city outdoor.geojson'
+      url: './data/1936_newyork_city_outdoor.geojson'
       type: 'fill'
       data-type: 'geojson'
       layer-type: 'fill'
@@ -40,7 +40,7 @@
   description: The 1968 protests confronted the University's involvement in Military research and segregationst gym construction plans.
   layers:
     - id: '1968outdoor'
-      url: '/data/1968 outdoor.geojson'
+      url: '/data/1968_outdoor.geojson'
       type: 'fill'
       data-type: 'geojson'
       layer-type: 'fill'
@@ -48,9 +48,8 @@
       paint:
         fill-color: 'rgba(196, 226, 208, 1)'
         fill-opacity: 0.5
-
     - id: '1968visibility'
-      url: './data/1968 visibility.geojson'
+      url: './data/1968_visibility.geojson'
       type: 'fill'
       data-type: 'geojson'
       layer-type: 'fill'
@@ -58,9 +57,8 @@
       paint:
         fill-color: 'rgba(222, 209, 154, 1)'
         fill-opacity: 0.2
-
     - id: '1968buildingoccupancy'
-      url: './data/1968 building + radio 4326.geojson'
+      url: './data/1968_building_radio_4326.geojson'
       type: 'fill-extrusion'
       data-type: 'geojson'
       layer-type: 'fill-extrusion'
@@ -78,35 +76,33 @@
   bearing: 20
   description: Columbia Students demanded divestment from Companies supporting appertheid South Africa.
   layers:
-- id: '1985buildingoccupancy'
-  url: './data/1985 building occupancy 4326.geojson'
-  type: 'fill-extrusion'
-  data-type: 'geojson'
-  layer-type: 'fill-extrusion'
-  persist: true
-  paint:
+  - id: '1985buildingoccupancy'
+    url: './data/1985_building_occupancy_4326.geojson'
+    type: 'fill-extrusion'
+    data-type: 'geojson'
+    layer-type: 'fill-extrusion'
+    persist: true
+    paint:
         fill-extrusion-color: 'rgba(220, 151, 151, 1)'
         fill-extrusion-height: 25
         fill-extrusion-base: 0
         fill-extrusion-opacity: 1
-
-- id: '1985outdoor'
-  url: './data/1985 outdoor 4326.geojson'
-  type: 'fill'
-  data-type: 'geojson'
-  layer-type: 'fill'
-  persist: true
-  paint:
+  - id: '1985outdoor'
+    url: './data/1985_outdoor_4326.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
         fill-color: 'rgba(195, 218, 192, 1)'
         fill-opacity: 0.5
-
-- id: '1985visibility'
-  url: './data/1985 visibility 4326.geojson'
-  type: 'fill'
-  data-type: 'geojson'
-  layer-type: 'fill'
-  persist: true
-  paint:
+  - id: '1985visibility'
+    url: './data/1985_visibility_4326.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
         fill-color: 'rgba(234, 233, 174, 1)'
         fill-opacity: 0.2
 
@@ -117,35 +113,33 @@
   bearing: 20
   description: Recent Encampments and disciplinary actions highlight the ongoing struggle for Free Speech and Academic Freedom on Campus.
   layers:
-- id: '2024building'
-  url: './data/2024 building occupy latest 4326.geojson'
-  type: 'fill-extrusion'
-  data-type: 'geojson'
-  layer-type: 'fill-extrusion'
-  persist: true
-  paint:
+  - id: '2024building'
+    url: './data/2024_building_occupy_latest_4326.geojson'
+    type: 'fill-extrusion'
+    data-type: 'geojson'
+    layer-type: 'fill-extrusion'
+    persist: true
+    paint:
         fill-extrusion-color: 'rgba(212, 118, 118, 1)'
         fill-extrusion-height: 28
         fill-extrusion-base: 0
         fill-extrusion-opacity: 1
-
-- id: '2024visibility'
-  url: './data/2024 visibility 4326.geojson'
-  type: 'fill'
-  data-type: 'geojson'
-  layer-type: 'fill'
-  persist: true
-  paint:
+  - id: '2024visibility'
+    url: './data/2024_visibility_4326.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
         fill-color: 'rgba(234, 234, 167, 1)'
         fill-opacity: 0.2
-
-- id: '2024outdoor'
-  url: './data/2024 outdoor 4326.geojson'
-  type: 'fill'
-  data-type: 'geojson'
-  layer-type: 'fill'
-  persist: true
-  paint:
+  - id: '2024outdoor'
+    url: './data/2024_outdoor_4326.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
         fill-color: 'rgba(196, 230, 211, 1)'
         fill-opacity: 0.5
 
