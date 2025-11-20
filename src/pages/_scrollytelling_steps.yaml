@@ -20,7 +20,7 @@
   pitch: 0
   bearing: 20
   description: In 1936, Columbia students protested President Nicholas Murray Butler's ties to Nazi Germany, as the German government was dismissing Jewish professors from universities, forcing many renowned scientists, including Albert Einstein, to flee.
-  media: ./img/Columbia-Univresity-1936.jpg
+  media: ./img/1936b.jpg
   layers:
     - id: '1936outdoor'
       url: 'https://raw.githubusercontent.com/sr4380/Columbia-as-Free-Speech-Test-Ground/main/public/data/1936%20newyork%20city%20outdoor.geojson'
