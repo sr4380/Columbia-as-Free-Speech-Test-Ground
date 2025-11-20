@@ -6,12 +6,11 @@
   "sources": {
     "openmaptiles": {
       "type": "vector",
-      "scheme": "xyz",
-      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=eBwz9oSyXSmQRvIElGcB"
+      "url": "https://api.maptiler.com/tiles/v3-openmaptiles/tiles.json?key=eBwz9oSyXSmQRvIElGcB"
     }
   },
 
-  "sprite": "https://api.maptiler.com/maps/toner/style/sprite",
+  "sprite": "https://api.maptiler.com/maps/toner/sprite",
   "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=eBwz9oSyXSmQRvIElGcB",
 
   "layers": [
@@ -20,6 +19,7 @@
       "type": "background",
       "paint": { "background-color": "#ffffff" }
     },
+
     {
       "id": "water",
       "type": "fill",
@@ -27,31 +27,15 @@
       "source-layer": "water",
       "paint": { "fill-color": "#000000" }
     },
+
     {
       "id": "landcover",
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "landcover",
-      "paint": { "fill-color": "#e5e5e5" }
+      "paint": { "fill-color": "#f0f0f0" }
     },
-    {
-      "id": "park",
-      "type": "fill",
-      "source": "openmaptiles",
-      "source-layer": "park",
-      "paint": { "fill-color": "#d0d0d0" }
-    },
-    {
-      "id": "buildings",
-      "type": "fill",
-      "source": "openmaptiles",
-      "source-layer": "building",
-      "minzoom": 15,
-      "paint": {
-        "fill-color": "#ffffff",
-        "fill-opacity": 0.3
-      }
-    },
+
     {
       "id": "roads",
       "type": "line",
@@ -64,11 +48,12 @@
           ["linear"],
           ["zoom"],
           10, 0.3,
-          14, 1.5,
-          18, 4
+          14, 1.2,
+          18, 3
         ]
       }
     },
+
     {
       "id": "boundaries",
       "type": "line",
@@ -76,9 +61,10 @@
       "source-layer": "boundary",
       "paint": {
         "line-color": "#000000",
-        "line-width": 1
+        "line-width": 0.8
       }
     },
+
     {
       "id": "labels",
       "type": "symbol",
