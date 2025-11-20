@@ -44,12 +44,13 @@
 
     {
       "id": "buildings",
-      "type": "fill",
+      "type": "line",
       "source": "openmaptiles",
       "source-layer": "building",
+      "minzoom": 15,
       "paint": {
-        "fill-color": "#000000",
-        "fill-opacity": 0.85
+        "fill-color": "#888888",
+        "fill-opacity": 0.5
       }
     },
 
