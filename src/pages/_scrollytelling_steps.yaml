@@ -1,9 +1,14 @@
+style: 'style.json'
+center: [-73.96778, 40.78376]
+zoom: 14
+pitch: 0
+bearing: 0
+
 - title:  Free to Speak? A Warning from Columbia's Century of History
   center: [-74.0060, 40.7128]
   zoom: 10
   pitch: 0
   bearing: 0
-  style: 'https://tiles.protomaps.com/tiles.json?key=46fe7633b5463e2b'
   description: Explore a century of student activism, protests, and the fight for free expression at Columbia University. Scroll down to see key moments mapped onto the campus from 1917 World War I, when speaking against the war was labeled treason and students were arrested for distributing antiwar leaflets while faculty were dismissed for political dissent; to the 1936 anti-Nazi protests, the 1968 anti-Vietnam War and Gym Crow uprising, the 1985 anti-apartheid movement, and today's Gaza solidarity movement.
   media: ./img/intro1.jpg
   
