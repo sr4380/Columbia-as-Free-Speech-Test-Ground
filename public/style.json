@@ -1,64 +1,107 @@
 {
   "version": 8,
   "name": "custom-toner",
-  "metadata": {"maputnik:renderer": "mlgljs"},
+  "metadata": { "maputnik:renderer": "mlgljs" },
   "sources": {
-    "protomaps": {
-      "attribution": "<a href=\"https://github.com/protomaps/basemaps\">Protomaps</a> © <a href=\"https://openstreetmap.org\">OpenStreetMap</a>",
+    "openmaptiles": {
       "type": "vector",
-      "tiles": [
-        "https://api.protomaps.com/tiles/v3/{z}/{x}/{y}.mvt?key=46fe7633b5463e2b"
-      ],
-      "maxzoom": 15
-      }
+      "url": "https://api.maptiler.com/tiles/v3/tiles.json?key=eBwz9oSyXSmQRvIElGcB"
+    }
   },
-  "sprite": "",
-  "glyphs": "https://protomaps.github.io/basemaps-assets/fonts/{fontstack}/{range}.pbf",
+  "sprite": "https://api.maptiler.com/maps/toner/sprite",
+  "glyphs": "https://api.maptiler.com/fonts/{fontstack}/{range}.pbf?key=eBwz9oSyXSmQRvIElGcB",
+
   "layers": [
     {
       "id": "background",
       "type": "background",
-      "minzoom": 2,
-      "maxzoom": 22,
-      "paint": {
-        "background-color": "#00aaff"
-      }
+      "paint": { "background-color": "#ffffff" }
     },
+
     {
       "id": "water",
       "type": "fill",
-      "source": "protomaps",
+      "source": "openmaptiles",
       "source-layer": "water",
-      "paint": {
-        "fill-color": "#000000"
-      }
+      "paint": { "fill-color": "#000000" }
     },
+
     {
-      "id": "landuse",
+      "id": "landcover",
       "type": "fill",
-      "source": "protomaps",
-      "source-layer": "landuse",
-      "paint": {
-        "fill-color": "#ffffff"
-      }
+      "source": "openmaptiles",
+      "source-layer": "landcover",
+      "paint": { "fill-color": "#e5e5e5" }
     },
+
+    {
+      "id": "park",
+      "type": "fill",
+      "source": "openmaptiles",
+      "source-layer": "park",
+      "paint": { "fill-color": "#d0d0d0" }
+    },
+
     {
       "id": "buildings",
       "type": "fill",
-      "source": "protomaps",
+      "source": "openmaptiles",
       "source-layer": "building",
       "paint": {
-        "fill-color": "#000000"
+        "fill-color": "#000000",
+        "fill-opacity": 0.85
       }
     },
+
     {
       "id": "roads",
       "type": "line",
-      "source": "protomaps",
+      "source": "openmaptiles",
       "source-layer": "transportation",
       "paint": {
         "line-color": "#000000",
-        "line-width": 0.8
+        "line-width": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10, 0.3,
+          14, 1.5,
+          18, 4
+        ]
+      }
+    },
+
+    {
+      "id": "boundaries",
+      "type": "line",
+      "source": "openmaptiles",
+      "source-layer": "boundary",
+      "paint": {
+        "line-color": "#000000",
+        "line-width": 1
+      }
+    },
+
+    {
+      "id": "labels",
+      "type": "symbol",
+      "source": "openmaptiles",
+      "source-layer": "place",
+      "layout": {
+        "text-field": "{name}",
+        "text-font": ["Noto Sans Regular"],
+        "text-size": [
+          "interpolate",
+          ["linear"],
+          ["zoom"],
+          10, 10,
+          16, 18
+        ]
+      },
+      "paint": {
+        "text-color": "#000000",
+        "text-halo-color": "#ffffff",
+        "text-halo-width": 2
       }
     }
   ]

@@ -1,24 +1,99 @@
-<!DOCTYPE html>
-<html>
+<!doctype html>
+<html lang="en">
 <head>
-<meta charset="utf-8" />
-<title>Protomaps Test</title>
-<script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
-<link href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css" rel="stylesheet" />
-<style>
-  body { margin:0; padding:0; }
-  #map { width:100%; height:100vh; }
-</style>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <title>Scrollytelling Map — Toner</title>
+
+  <!-- MapLibre CSS -->
+  <link
+    href="https://unpkg.com/maplibre-gl/dist/maplibre-gl.css"
+    rel="stylesheet"
+  />
+
+  <style>
+    /* simple page reset + full viewport map */
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
+
+    /* map container */
+    #map {
+      width: 100%;
+      height: 100vh; /* full viewport height; change to 50vh if you want half page */
+      position: relative;
+    }
+
+    /* small attribution box */
+    .map-attrib {
+      position: absolute;
+      left: 8px;
+      bottom: 8px;
+      background: rgba(255,255,255,0.85);
+      padding: 6px 8px;
+      font-size: 12px;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+    }
+  </style>
 </head>
 <body>
-<div id="map"></div>
-<script>
-  const map = new maplibregl.Map({
-    container: 'map',
-    style: 'style.json', 
-    center: [-74.0060, 40.7128],
-    zoom: 10
-  });
-</script>
+
+  <div id="map"></div>
+  <div class="map-attrib">Basemap: Toner (MapTiler) — style: <code>/style.json</code></div>
+
+  <!-- MapLibre JS -->
+  <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
+  <script>
+    // create the map
+    const map = new maplibregl.Map({
+      container: "map",
+      style: "/style.json",            // <--- your public/style.json
+      center: [-73.9604192, 40.8075803],
+      zoom: 12,
+      interactive: false,              // set to true if you want user interaction
+      // preserveDrawingBuffer: false, // optional
+    });
+
+    // If you want to explicitly disable interaction handlers (robust)
+    if (!map.options.interactive) {
+      map.dragPan.disable();
+      map.scrollZoom.disable();
+      map.doubleClickZoom.disable();
+      map.touchZoomRotate.disable();
+      map.keyboard.disable();
+      map.boxZoom.disable();
+      map.dragRotate && map.dragRotate.disable && map.dragRotate.disable();
+    }
+
+    // optional: show basic error if style fails to load
+    map.on("error", (e) => {
+      // style/load errors show up here
+      console.error("MapLibre error:", e.error || e);
+      const el = document.createElement("div");
+      el.style.position = "absolute";
+      el.style.top = "12px";
+      el.style.right = "12px";
+      el.style.padding = "8px 10px";
+      el.style.background = "rgba(255,0,0,0.9)";
+      el.style.color = "white";
+      el.style.zIndex = 9999;
+      el.style.borderRadius = "6px";
+      el.textContent = "Map failed to load — check console for details";
+      document.body.appendChild(el);
+    });
+
+    // helpful debug: log when style loads
+    map.on("load", () => {
+      console.log("Map loaded with style:", map.getStyle().name || map.getStyle());
+    });
+  </script>
 </body>
 </html>
