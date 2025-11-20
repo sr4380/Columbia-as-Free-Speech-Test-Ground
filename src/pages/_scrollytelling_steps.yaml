@@ -1,10 +1,5 @@
-style: 'style.json'
-center: [-73.96778, 40.78376]
-zoom: 14
-pitch: 0
-bearing: 0
-
 - title:  Free to Speak? A Warning from Columbia's Century of History
+  style: '/style.json'
   center: [-74.0060, 40.7128]
   zoom: 10
   pitch: 0
