@@ -49,7 +49,7 @@
       "source-layer": "building",
       "minzoom": 15,
       "paint": {
-        "fill-color": "#888888",
+        "fill-color": "#ffffff",
         "fill-opacity": 0.5
       }
     },
