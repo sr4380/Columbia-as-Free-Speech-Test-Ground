@@ -28,7 +28,7 @@
      persist: true
      paint: 
       fill-extrusion-color: 'rgba(220, 130, 130, 1)'
-      fill-extrusion-height: 25
+      fill-extrusion-height: 30
       fill-extrusion-base: 0
       fill-extrusion-opacity: 1
 
@@ -92,7 +92,7 @@
       persist: true
       paint:
         fill-extrusion-color: 'rgba(220, 130, 130, 1)'
-        fill-extrusion-height: 25
+        fill-extrusion-height: 30
         fill-extrusion-base: 0
         fill-extrusion-opacity: 1
 
@@ -138,7 +138,7 @@
     persist: true
     paint:
         fill-extrusion-color: 'rgba(220, 130, 130, 1)'
-        fill-extrusion-height: 25
+        fill-extrusion-height: 30
         fill-extrusion-base: 0
         fill-extrusion-opacity: 1
 
@@ -183,7 +183,7 @@
     persist: true
     paint:
         fill-extrusion-color: 'rgba(220, 130, 130, 1)'
-        fill-extrusion-height: 28
+        fill-extrusion-height: 30
         fill-extrusion-base: 0
         fill-extrusion-opacity: 1
 
