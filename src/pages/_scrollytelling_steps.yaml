@@ -16,7 +16,7 @@
   media: ./img/1917-updated.jpg
 
 - title: 1936 Anti-Nazi Protests
-  center: [-73.9615, 40.8075]
+  center: [-73.9615, 40.8050]
   zoom: 12
   pitch: 0
   bearing: 20
