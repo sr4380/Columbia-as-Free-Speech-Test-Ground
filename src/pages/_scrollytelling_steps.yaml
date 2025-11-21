@@ -16,8 +16,8 @@
   media: ./img/1917-updated.jpg
 
 - title: 1936 Anti-Nazi Protests
-  center: [-73.9615, 40.8050]
-  zoom: 12
+  center: [-73.9615, 40.8000]
+  zoom: 12.5
   pitch: 0
   bearing: 20
   description: In 1936, Columbia students protested President Nicholas Murray Butler's ties to Nazi Germany, as the German government was dismissing Jewish professors from universities, forcing many renowned scientists, including Albert Einstein, to flee. Students were expelled for expressing their dissent.
