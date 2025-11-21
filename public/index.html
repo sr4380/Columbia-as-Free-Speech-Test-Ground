@@ -39,15 +39,15 @@
       font-size: 12px;
       border-radius: 6px;
       box-shadow: 0 1px 4px rgba(0,0,0,0.12);
-      z-index: 20;
+      z-index: 10;
     }
 
-    /* Legend styling */
+    /* Legend CSS */
     #map-legend {
       position: absolute;
       top: 12px;
       right: 12px;
-      background: rgba(255,255,255,0.85);
+      background: rgba(255,255,255,0.95);
       padding: 10px;
       border-radius: 6px;
       font-size: 14px;
@@ -74,14 +74,13 @@
 
   <div id="map"></div>
 
-  <!-- Legend -->
+  <!-- Legend placed after map so it overlays properly -->
   <div id="map-legend">
     <div><span style="background:red;"></span> Indoor Protest</div>
     <div><span style="background:green;"></span> Outdoor Protest</div>
     <div><span style="background:yellow;"></span> Visibility</div>
   </div>
 
-  <!-- Attribution -->
   <div class="map-attrib">Basemap: Toner (MapTiler) — style: <code>/style.json</code></div>
 
   <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
@@ -89,7 +88,7 @@
     const map = new maplibregl.Map({
       container: "map",
       style: "/style.json",
-      center: [-73.9772, 40.7831], // start with full Manhattan
+      center: [-73.9772, 40.7831],
       zoom: 11,
       interactive: false,
     });
@@ -104,34 +103,10 @@
       map.dragRotate && map.dragRotate.disable && map.dragRotate.disable();
     }
 
-    map.on("error", (e) => {
-      console.error("MapLibre error:", e.error || e);
-      const el = document.createElement("div");
-      el.style.position = "absolute";
-      el.style.top = "12px";
-      el.style.right = "12px";
-      el.style.padding = "8px 10px";
-      el.style.background = "rgba(255,0,0,0.9)";
-      el.style.color = "white";
-      el.style.zIndex = 9999;
-      el.style.borderRadius = "6px";
-      el.textContent = "Map failed to load — check console for details";
-      document.body.appendChild(el);
-    });
-
     map.on("load", () => {
-      console.log("Map loaded with style:", map.getStyle().name || map.getStyle());
+      console.log("Map loaded");
 
-      // Full Manhattan view
-      const manhattanView = { center: [-73.9772, 40.7831], zoom: 11 };
-      // Columbia University + Morningside Park view
       const columbiaView = { center: [-73.9615, 40.8075], zoom: 14 };
-
-      // Start with Manhattan
-      map.setCenter(manhattanView.center);
-      map.setZoom(manhattanView.zoom);
-
-      // Example: fly to Columbia after 3 seconds
       setTimeout(() => {
         map.flyTo({
           center: columbiaView.center,
@@ -142,6 +117,5 @@
       }, 3000);
     });
   </script>
-
 </body>
 </html>
