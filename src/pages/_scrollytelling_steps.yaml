@@ -1,6 +1,6 @@
 - title:  Free to Speak? A Warning from Columbia's Century of History
   style: '/style.json'
-  center: [-74.0060, 40.7128]
+  center: [-73.9615, 40.8075]
   zoom: 10
   pitch: 0
   bearing: 0
@@ -8,8 +8,8 @@
   media: ./img/intro1.jpg
   
 - title: 1917 World War I- Columbia Calls
-  center: [-74.0060, 40.7128]
-  zoom: 10
+  center: [-73.9615, 40.8075]
+  zoom: 15
   pitch: 0
   bearing: 20
   description: In 1917, during World War I, speaking against the war was considered treason. Columbia students were arrested for distributing antiwar leaflets, and faculty members faced dismissal for expressing political dissent.
