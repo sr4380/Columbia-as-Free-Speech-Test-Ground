@@ -14,6 +14,11 @@
   bearing: 20
   description: In 1917, during World War I, speaking against the war was considered an act of treason. At Columbia, students who criticized the university's involvement in the war risked expulsion. Some were expelled for distributing anti-war leaflets, and faculty members were dismissed for expressing political dissent.
   media: ./img/1917-updated.jpg
+  legend:
+    - color: 'rgba(220,130,130,1)'
+      label: 'Indoor Protest'
+    - color: 'rgba(196,226,208,1)'
+      label: 'Outdoor Protest'
   layers:
    - id: '1917'
      url: './data/1917.geojson'
@@ -53,7 +58,13 @@
   bearing: 20
   description: The 1968 protests confronted the University's involvement in military research and its segregated gym construction plans. Students protested and occupied five campus buildings. Around 20 students were fully dismissed, and 42 were censured. Out of 150,000 class and laboratory sessions, 35 were disrupted and half of them had to be canceled.
   media: ./img/1968.jpg
-  
+  legend:
+    - color: 'rgba(220,130,130,1)'
+      label: 'Indoor Protest'
+    - color: 'rgba(196,226,208,1)'
+      label: 'Outdoor Protest'
+    - color: 'rgba(222,209,154,1)'
+      label: 'Visibility'
   layers:
     - id: '1968outdoor'
       url: './data/1968outdoor.geojson'
@@ -92,6 +103,13 @@
   bearing: 20
   description: Columbia students demanded divestment from companies supporting apartheid South Africa, at a time when nearly 20 trustees were involved with businesses operating there. Columbia later became the first Ivy League institution to divest, following strong student dissent, including building occupations and fasting.
   media: ./img/1985.jpg
+  legend:
+    - color: 'rgba(220,130,130,1)'
+      label: 'Indoor Protest'
+    - color: 'rgba(196,226,208,1)'
+      label: 'Outdoor Protest'
+    - color: 'rgba(222,209,154,1)'
+      label: 'Visibility'
   layers:
 
   - id: '1985outdoor'
@@ -131,6 +149,13 @@
   bearing: 20
   description: Recent encampments and disciplinary actions highlight the ongoing struggle for free speech and academic freedom on campus. Amid the ongoing destruction in Gaza, Columbia students staged encampments calling for divestment from companies connected to the situation. When new disciplinary policies addressed antisemitism, students—while expressing political dissent—adopted multiple forms of expression, including physical encampments, symbolic use of space, keffiyehs, masks, and flags.
   media: ./img/2024.jpg
+  legend:
+    - color: 'rgba(220,130,130,1)'
+      label: 'Indoor Protest'
+    - color: 'rgba(196,226,208,1)'
+      label: 'Outdoor Protest'
+    - color: 'rgba(222,209,154,1)'
+      label: 'Visibility'
   layers:
   - id: '2024outdoor'
     url: './data/2024outdoor.geojson'
