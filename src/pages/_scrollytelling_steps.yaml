@@ -9,7 +9,7 @@
   
 - title: 1917 World War I- Columbia Calls
   center: [-73.9670, 40.8085]
-  zoom: 15.5
+  zoom: 16
   pitch: 0
   bearing: 20
   description: In 1917, during World War I, speaking against the war was considered an act of treason. At Columbia, students who criticized the university's involvement in the war risked expulsion. Some were expelled for distributing anti-war leaflets, and faculty members were dismissed for expressing political dissent.
@@ -29,7 +29,7 @@
 
 - title: 1936 Anti-Nazi Protests
   center: [-73.9850, 40.7800]
-  zoom: 12
+  zoom: 13
   pitch: 0
   bearing: 20
   description: In 1936, Columbia students protested President Nicholas Murray Butler's ties to Nazi Germany, as the German government was dismissing Jewish professors from universities, forcing many renowned scientists, including Albert Einstein, to flee. Students were expelled for expressing their dissent.
@@ -48,7 +48,7 @@
   
 - title: 1968 Anti-Vietnum War Protests & Gym Crow Uprising
   center: [-73.9670, 40.8085]
-  zoom: 15.5
+  zoom: 16
   pitch: 0
   bearing: 20
   description: The 1968 protests confronted the University's involvement in military research and its segregated gym construction plans. Students protested and occupied five campus buildings. Around 20 students were fully dismissed, and 42 were censured. Out of 150,000 class and laboratory sessions, 35 were disrupted and half of them had to be canceled.
@@ -87,23 +87,13 @@
 
 - title: 1985 Anti-Aperthied SouthAfrica Protests
   center: [-73.9670, 40.8085]
-  zoom: 15.5
+  zoom: 16
   pitch: 0
   bearing: 20
   description: Columbia students demanded divestment from companies supporting apartheid South Africa, at a time when nearly 20 trustees were involved with businesses operating there. Columbia later became the first Ivy League institution to divest, following strong student dissent, including building occupations and fasting.
   media: ./img/1985.jpg
   layers:
-  - id: '1985building'
-    url: './data/1985building.geojson'
-    type: 'fill-extrusion'
-    data-type: 'geojson'
-    layer-type: 'fill-extrusion'
-    persist: true
-    paint:
-        fill-extrusion-color: 'rgba(220, 130, 130, 1)'
-        fill-extrusion-height: 25
-        fill-extrusion-base: 0
-        fill-extrusion-opacity: 1
+
   - id: '1985outdoor'
     url: './data/1985outdoor.geojson'
     type: 'fill'
@@ -122,15 +112,44 @@
     paint:
         fill-color: 'rgba(222, 209, 154, 1)'
         fill-opacity: 0.5
+  - id: '1985building'
+    url: './data/1985building.geojson'
+    type: 'fill-extrusion'
+    data-type: 'geojson'
+    layer-type: 'fill-extrusion'
+    persist: true
+    paint:
+        fill-extrusion-color: 'rgba(220, 130, 130, 1)'
+        fill-extrusion-height: 25
+        fill-extrusion-base: 0
+        fill-extrusion-opacity: 1
 
 - title: 2024 Pro-Palestinian Encampment
   center: [-73.9670, 40.8085]
-  zoom: 15.5
+  zoom: 16
   pitch: 0
   bearing: 20
   description: Recent encampments and disciplinary actions highlight the ongoing struggle for free speech and academic freedom on campus. Amid the ongoing destruction in Gaza, Columbia students staged encampments calling for divestment from companies connected to the situation. When new disciplinary policies addressed antisemitism, students—while expressing political dissent—adopted multiple forms of expression, including physical encampments, symbolic use of space, keffiyehs, masks, and flags.
   media: ./img/2024.jpg
   layers:
+  - id: '2024outdoor'
+    url: './data/2024outdoor.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+        fill-color: 'rgba(196, 226, 208, 1)'
+        fill-opacity: 0.8
+  - id: '2024visibility'
+    url: './data/2024visibility.geojson'
+    type: 'fill'
+    data-type: 'geojson'
+    layer-type: 'fill'
+    persist: true
+    paint:
+        fill-color: 'rgba(222, 209, 154, 1)'
+        fill-opacity: 0.5
   - id: '2024building'
     url: './data/2024building.geojson'
     type: 'fill-extrusion'
@@ -142,23 +161,4 @@
         fill-extrusion-height: 28
         fill-extrusion-base: 0
         fill-extrusion-opacity: 1
-  - id: '2024visibility'
-    url: './data/2024visibility.geojson'
-    type: 'fill'
-    data-type: 'geojson'
-    layer-type: 'fill'
-    persist: true
-    paint:
-        fill-color: 'rgba(222, 209, 154, 1)'
-        fill-opacity: 0.5
-  - id: '2024outdoor'
-    url: './data/2024outdoor.geojson'
-    type: 'fill'
-    data-type: 'geojson'
-    layer-type: 'fill'
-    persist: true
-    paint:
-        fill-color: 'rgba(196, 226, 208, 1)'
-        fill-opacity: 0.8
-
 
