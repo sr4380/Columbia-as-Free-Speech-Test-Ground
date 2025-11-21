@@ -14,6 +14,18 @@
   bearing: 20
   description: In 1917, during World War I, speaking against the war was considered an act of treason. At Columbia, students who criticized the university's involvement in the war risked expulsion. Some were expelled for distributing anti-war leaflets, and faculty members were dismissed for expressing political dissent.
   media: ./img/1917-updated.jpg
+  layers:
+   - id: '1917'
+     url: './data/1917.geojson'
+     type: 'fill'
+     data-type: 'geojson'
+     layer-type: 'fill'
+     persist: true
+     paint: 
+      fill-extrusion-color: 'rgba(201, 126, 126, 1)'
+      fill-extrusion-height: 25
+      fill-extrusion-base: 0
+      fill-extrusion-opacity: 1
 
 - title: 1936 Anti-Nazi Protests
   center: [-73.9615, 40.8000]
