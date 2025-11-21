@@ -17,9 +17,9 @@
   layers:
    - id: '1917'
      url: './data/1917.geojson'
-     type: 'fill'
+     type: 'fill-extrusion'
      data-type: 'geojson'
-     layer-type: 'fill'
+     layer-type: 'fill-extrusion'
      persist: true
      paint: 
       fill-extrusion-color: 'rgba(201, 126, 126, 1)'
