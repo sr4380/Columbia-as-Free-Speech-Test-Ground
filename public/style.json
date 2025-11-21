@@ -25,7 +25,7 @@
       "type": "fill",
       "source": "openmaptiles",
       "source-layer": "water",
-      "paint": { "fill-color": "#555555" }
+      "paint": { "fill-color": "#000000" }
     },
 
       {
