@@ -12,71 +12,76 @@
   />
 
   <style>
-  html, body {
-    margin: 0;
-    height: 100%;
-  }
-  body {
-    font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
-    display: flex;
-    flex-direction: column;
-    min-height: 100vh;
-  }
+    html, body {
+      margin: 0;
+      height: 100%;
+    }
 
-  #map {
-    width: 100%;
-    height: 100vh;
-    position: relative;
-  }
+    body {
+      font-family: system-ui, -apple-system, "Segoe UI", Roboto, "Helvetica Neue", Arial;
+      display: flex;
+      flex-direction: column;
+      min-height: 100vh;
+    }
 
-  .map-attrib {
-    position: absolute;
-    left: 8px;
-    bottom: 8px;
-    background: rgba(255,255,255,0.85);
-    padding: 6px 8px;
-    font-size: 12px;
-    border-radius: 6px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
-  }
+    #map {
+      width: 100%;
+      height: 100vh;
+      position: relative;
+    }
 
-  /* Legend CSS should be separate, not inside .map-attrib */
-  #map-legend {
-    position: absolute;
-    top: 12px;
-    right: 12px;
-    background: rgba(255,255,255,0.85);
-    padding: 10px;
-    border-radius: 6px;
-    font-size: 14px;
-    box-shadow: 0 1px 4px rgba(0,0,0,0.12);
-    z-index: 10;
-  }
+    .map-attrib {
+      position: absolute;
+      left: 8px;
+      bottom: 8px;
+      background: rgba(255,255,255,0.85);
+      padding: 6px 8px;
+      font-size: 12px;
+      border-radius: 6px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+      z-index: 20;
+    }
 
-  #map-legend div {
-    display: flex;
-    align-items: center;
-    margin-bottom: 4px;
-  }
+    /* Legend styling */
+    #map-legend {
+      position: absolute;
+      top: 12px;
+      right: 12px;
+      background: rgba(255,255,255,0.85);
+      padding: 10px;
+      border-radius: 6px;
+      font-size: 14px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.12);
+      z-index: 20; /* higher than map */
+    }
 
-  #map-legend span {
-    display: inline-block;
-    width: 16px;
-    height: 16px;
-    margin-right: 6px;
-    border-radius: 3px;
-  }
-</style>
+    #map-legend div {
+      display: flex;
+      align-items: center;
+      margin-bottom: 4px;
+    }
 
+    #map-legend span {
+      display: inline-block;
+      width: 16px;
+      height: 16px;
+      margin-right: 6px;
+      border-radius: 3px;
+    }
+  </style>
 </head>
 <body>
-<div id="map-legend">
-  <div><span style="background:red;"></span> Indoor Protest</div>
-  <div><span style="background:green;"></span> Outdoor Protest</div>
-  <div><span style="background:yellow;"></span> Visibility</div>
-</div>
 
   <div id="map"></div>
+
+  <!-- Legend -->
+  <div id="map-legend">
+    <div><span style="background:red;"></span> Indoor Protest</div>
+    <div><span style="background:green;"></span> Outdoor Protest</div>
+    <div><span style="background:yellow;"></span> Visibility</div>
+  </div>
+
+  <!-- Attribution -->
   <div class="map-attrib">Basemap: Toner (MapTiler) — style: <code>/style.json</code></div>
 
   <script src="https://unpkg.com/maplibre-gl/dist/maplibre-gl.js"></script>
@@ -137,5 +142,6 @@
       }, 3000);
     });
   </script>
+
 </body>
 </html>
