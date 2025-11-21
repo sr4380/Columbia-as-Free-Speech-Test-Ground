@@ -1,6 +1,6 @@
 - title:  Free Speech as Contested Ground at Columbia
   style: '/style.json'
-  center: [-74.500, 40.7800]
+  center: [-74.100, 40.7800]
   zoom: 11
   pitch: 0
   bearing: 0
@@ -43,7 +43,7 @@
       persist: true
       paint:
         fill-color: 'rgba(196, 226, 208, 1)'
-        fill-opacity: 1.5
+        fill-opacity: 1
 
   
 - title: 1968 Anti-Vietnum War Protests & Gym Crow Uprising
