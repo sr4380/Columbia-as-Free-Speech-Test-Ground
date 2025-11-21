@@ -8,7 +8,7 @@
   media: ./img/intro1.jpg
   
 - title: 1917 World War I- Columbia Calls
-  center: [-73.9700, 40.8075]
+  center: [-73.9650, 40.8075]
   zoom: 16
   pitch: 0
   bearing: 20
@@ -16,7 +16,7 @@
   media: ./img/1917-updated.jpg
 
 - title: 1936 Anti-Nazi Protests
-  center: [-73.9700, 40.8075]
+  center: [-73.9650, 40.8075]
   zoom: 16
   pitch: 0
   bearing: 20
@@ -35,7 +35,7 @@
 
   
 - title: 1968 Anti-Vietnum War Protests & Gym Crow Uprising
-  center: [-73.9700, 40.8075]
+  center: [-73.9650, 40.8075]
   zoom: 16
   pitch: 0
   bearing: 20
@@ -74,7 +74,7 @@
         fill-extrusion-opacity: 1
 
 - title: 1985 Anti-Aperthied SouthAfrica Protests
-  center: [-73.9700, 40.8075]
+  center: [-73.9650, 40.8075]
   zoom: 16
   pitch: 0
   bearing: 20
@@ -112,7 +112,7 @@
         fill-opacity: 0.2
 
 - title: 2024 Pro-Palestinian Encampment
-  center: [-73.9700, 40.8075]
+  center: [-73.9650, 40.8075]
   zoom: 16
   pitch: 0
   bearing: 20
