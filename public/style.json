@@ -28,7 +28,7 @@
       "paint": { "fill-color": "#000000" }
     },
 
-    {
+      {
       "id": "landcover_grass_fill",
       "type": "fill",
       "source": "openmaptiles",
@@ -36,11 +36,16 @@
       "filter": ["==", "class", "grass"],
       "paint": {
         "fill-antialias": true,
-        "fill-color": "rgba(0,0,0,0.3)",
+        "fill-color": {
+          "stops": [
+            [10, "rgba(0,0,0,0.3)"],
+            [16, "rgba(0,0,0,1)"]
+          ]
+        },
         "fill-opacity": 1,
         "fill-outline-color": "rgba(0,0,0,0)"
       },
-      "layout": { "visibility": "visible" }
+      "layout": {"visibility": "visible"}
     },
 
     {
@@ -51,34 +56,12 @@
       "filter": ["==", "class", "grass"],
       "paint": {
         "fill-antialias": true,
-        "fill-opacity": 0.75,
-        "fill-outline-color": "rgba(0,0,0,0)",
-        "fill-pattern": "dash-t"
+        "fill-opacity": {
+          "stops": [[10, 0.75], [14, 1]]
+        },
+        "fill-outline-color": "rgba(94,94,94,0)"
       },
-      "layout": { "visibility": "visible" }
-    },
-
-    {
-      "id": "road_secondary",
-      "type": "line",
-      "source": "openmaptiles",
-      "source-layer": "transportation",
-      "filter": [
-        "all",
-        ["==", "$type", "LineString"],
-        ["!in", "class", "pier", "rail", "path", "primary"],
-        ["in", "class", "secondary", "tertiary", "minor", "service"]
-      ],
-      "layout": {
-        "line-cap": "round",
-        "line-join": "round",
-        "visibility": "visible"
-      },
-      "minzoom": 10,
-      "paint": {
-        "line-color": "rgba(0,0,0,0.5)",
-        "line-width": 0.05
-      }
+      "layout": {"visibility": "visible"}
     },
 
     {
@@ -91,16 +74,15 @@
         "line-width": 1
       }
     },
-
     {
       "id": "buildings",
       "type": "line",
-      "source": "openmaptiles",
+      "source": "openmaptiles", 
       "source-layer": "building",
       "paint": {
         "line-color": "#555555",
         "line-width": 1.2
-      }
+      }  
     }
   ]
 }
