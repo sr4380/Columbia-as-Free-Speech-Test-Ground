@@ -1,18 +1,23 @@
-- title:  Free to Speech?
+- title: Free to Speech?
   style: '/style.json'
   center: [-74.100, 40.7800]
   zoom: 11
   pitch: 0
   bearing: 0
-  description: Explore a century of student activism at Columbia University, mapping the campus spaces where forms of speech, protest, and dissent unfolded. From 1917 World War I dissent, to the 1936 anti-Nazi protests, the 1968 anti-Vietnam War and Gym Crow uprising, the 1985 anti-apartheid movement, and today's Gaza solidarity movement, this map traces the physical sites where dissent has been expressed.
+  description: |
+    Explore a century of student activism at Columbia University, mapping the campus spaces where forms of speech, protest, and dissent unfolded. 
+    From 1917 World War I dissent, to the 1936 anti-Nazi protests, the 1968 anti-Vietnam War and Gym Crow uprising, the 1985 anti-apartheid movement, and today's Gaza solidarity movement, this map traces the physical sites where dissent has been expressed.
   media: ./img/intro2.jpg
-  
+
 - title: 1917 World War I- Columbia Calls
   center: [-73.9670, 40.8085]
   zoom: 16
   pitch: 0
   bearing: 20
-  description: In 1917, during World War I, speaking against the war was considered an act of treason. At Columbia, students who criticized the university's involvement in the war risked expulsion. Some were expelled for distributing anti-war leaflets, and faculty members were dismissed for expressing political dissent.
+  description: |
+    In 1917, during World War I, speaking against the war was considered an act of treason. 
+    At Columbia, students who criticized the university's involvement in the war risked expulsion. 
+    Some were expelled for distributing anti-war leaflets, and faculty members were dismissed for expressing political dissent.
   media: ./img/1917-updated.jpg
   legend:
     - color: 'rgba(220,130,130,1)'
@@ -20,24 +25,26 @@
     - color: 'rgba(196,226,208,1)'
       label: 'Outdoor Protest'
   layers:
-   - id: '1917'
-     url: './data/1917.geojson'
-     type: 'fill-extrusion'
-     data-type: 'geojson'
-     layer-type: 'fill-extrusion'
-     persist: true
-     paint: 
-      fill-extrusion-color: 'rgba(220, 130, 130, 1)'
-      fill-extrusion-height: 30
-      fill-extrusion-base: 0
-      fill-extrusion-opacity: 1
+    - id: '1917'
+      url: './data/1917.geojson'
+      type: 'fill-extrusion'
+      data-type: 'geojson'
+      layer-type: 'fill-extrusion'
+      persist: true
+      paint: 
+        fill-extrusion-color: 'rgba(220, 130, 130, 1)'
+        fill-extrusion-height: 30
+        fill-extrusion-base: 0
+        fill-extrusion-opacity: 1
 
 - title: 1936 Anti-Nazi Protests
   center: [-73.9900, 40.7800]
   zoom: 12.5
   pitch: 0
   bearing: 20
-  description: In 1936, students protested President Butler's ties to Nazi Germany and his acceptance of an invitation to Heidelberg University's 550th anniversary, an event aligned with Nazi ideology. At the time, Heidelberg had dismissed two Jewish professors. Students who expressed dissent were expelled. 
+  description: |
+    In 1936, students protested President Butler's ties to Nazi Germany and his acceptance of an invitation to Heidelberg University's 550th anniversary, an event aligned with Nazi ideology. 
+    At the time, Heidelberg had dismissed two Jewish professors. Students who expressed dissent were expelled.
   media: ./img/1936b.jpg
   layers:
     - id: '1936nyc'
@@ -50,13 +57,15 @@
         fill-color: 'rgba(196, 226, 208, 1)'
         fill-opacity: 1
 
-  
 - title: 1968 Anti-Vietnum War Protests & Gym Crow Uprising
   center: [-73.9670, 40.8085]
   zoom: 15.7
   pitch: 0
   bearing: 20
-  description: In 1968, students protested the University's involvement in military research for the Vietnam War and its racially segregated gym construction, which confined Harlem residents to a basement entrance. They occupied campus buildings, and former University president Grayson Kirk called in the police to remove them. Students were beaten, arrested, suspended, and faced widespread accusations of "anti-American mindset". Around 20 students were fully dismissed, and 42 were censured. Out of 150,000 class and laboratory sessions, 35 were disrupted and half of them had to be canceled.
+  description: |
+    In 1968, students protested the University's involvement in military research for the Vietnam War and its racially segregated gym construction, which confined Harlem residents to a basement entrance. 
+    They occupied campus buildings, and former University president Grayson Kirk called in the police to remove them. Students were beaten, arrested, suspended, and faced widespread accusations of "anti-American mindset". 
+    Around 20 students were fully dismissed, and 42 were censured. Out of 150,000 class and laboratory sessions, 35 were disrupted and half of them had to be canceled.
   media: ./img/1968.jpg
   legend:
     - color: 'rgba(220,130,130,1)'
@@ -101,7 +110,9 @@
   zoom: 15.7
   pitch: 0
   bearing: 20
-  description: Columbia students demanded divestment from companies supporting apartheid South Africa, at a time when nearly 20 trustees were involved with businesses operating there. Columbia later became the first Ivy League institution to divest, following strong student dissent, including building occupations and fasting.
+  description: |
+    Columbia students demanded divestment from companies supporting apartheid South Africa, at a time when nearly 20 trustees were involved with businesses operating there. 
+    Columbia later became the first Ivy League institution to divest, following strong student dissent, including building occupations and fasting.
   media: ./img/1985.jpg
   legend:
     - color: 'rgba(220,130,130,1)'
@@ -111,32 +122,31 @@
     - color: 'rgba(222,209,154,1)'
       label: 'Visibility'
   layers:
-
-  - id: '1985outdoor'
-    url: './data/1985outdoor.geojson'
-    type: 'fill'
-    data-type: 'geojson'
-    layer-type: 'fill'
-    persist: true
-    paint:
+    - id: '1985outdoor'
+      url: './data/1985outdoor.geojson'
+      type: 'fill'
+      data-type: 'geojson'
+      layer-type: 'fill'
+      persist: true
+      paint:
         fill-color: 'rgba(196, 226, 208, 1)'
         fill-opacity: 1
-  - id: '1985visibility'
-    url: './data/1985visibility.geojson'
-    type: 'fill'
-    data-type: 'geojson'
-    layer-type: 'fill'
-    persist: true
-    paint:
+    - id: '1985visibility'
+      url: './data/1985visibility.geojson'
+      type: 'fill'
+      data-type: 'geojson'
+      layer-type: 'fill'
+      persist: true
+      paint:
         fill-color: 'rgba(222, 209, 154, 1)'
         fill-opacity: 0.5
-  - id: '1985building'
-    url: './data/1985building.geojson'
-    type: 'fill-extrusion'
-    data-type: 'geojson'
-    layer-type: 'fill-extrusion'
-    persist: true
-    paint:
+    - id: '1985building'
+      url: './data/1985building.geojson'
+      type: 'fill-extrusion'
+      data-type: 'geojson'
+      layer-type: 'fill-extrusion'
+      persist: true
+      paint:
         fill-extrusion-color: 'rgba(220, 130, 130, 1)'
         fill-extrusion-height: 30
         fill-extrusion-base: 0
@@ -147,7 +157,9 @@
   zoom: 15.7
   pitch: 0
   bearing: 20
-  description: Recent encampments and disciplinary actions highlight the ongoing struggle for free speech and academic freedom on campus. Amid the ongoing destruction in Gaza, Columbia students staged encampments calling for divestment from companies connected to the situation. When new disciplinary policies addressed antisemitism, students—while expressing political dissent—adopted multiple forms of expression, including physical encampments, symbolic use of space, keffiyehs, masks, and flags.
+  description: |
+    Recent encampments and disciplinary actions highlight the ongoing struggle for free speech and academic freedom on campus. 
+    Amid the ongoing destruction in Gaza, Columbia students staged encampments calling for divestment from companies connected to the situation.
   media: ./img/2024.jpg
   legend:
     - color: 'rgba(220,130,130,1)'
@@ -157,31 +169,31 @@
     - color: 'rgba(222,209,154,1)'
       label: 'Visibility'
   layers:
-  - id: '2024outdoor'
-    url: './data/2024outdoor.geojson'
-    type: 'fill'
-    data-type: 'geojson'
-    layer-type: 'fill'
-    persist: true
-    paint:
+    - id: '2024outdoor'
+      url: './data/2024outdoor.geojson'
+      type: 'fill'
+      data-type: 'geojson'
+      layer-type: 'fill'
+      persist: true
+      paint:
         fill-color: 'rgba(196, 226, 208, 1)'
         fill-opacity: 1
-  - id: '2024visibility'
-    url: './data/2024visibility.geojson'
-    type: 'fill'
-    data-type: 'geojson'
-    layer-type: 'fill'
-    persist: true
-    paint:
+    - id: '2024visibility'
+      url: './data/2024visibility.geojson'
+      type: 'fill'
+      data-type: 'geojson'
+      layer-type: 'fill'
+      persist: true
+      paint:
         fill-color: 'rgba(222, 209, 154, 1)'
         fill-opacity: 0.5
-  - id: '2024building'
-    url: './data/2024building.geojson'
-    type: 'fill-extrusion'
-    data-type: 'geojson'
-    layer-type: 'fill-extrusion'
-    persist: true
-    paint:
+    - id: '2024building'
+      url: './data/2024building.geojson'
+      type: 'fill-extrusion'
+      data-type: 'geojson'
+      layer-type: 'fill-extrusion'
+      persist: true
+      paint:
         fill-extrusion-color: 'rgba(220, 130, 130, 1)'
         fill-extrusion-height: 30
         fill-extrusion-base: 0
@@ -193,5 +205,7 @@
   zoom: 11
   pitch: 0
   bearing: 0
-  description: If more than a century after Columbia's first major speech controversies, the ability to expose, criticize and confront oppressive regimes on campus and in the classroom remains disputed, Free to Speak asks: what forms of expression might solidarity take next?
-
+  description: |
+    If more than a century after Columbia's first major speech controversies,
+    the ability to expose, criticize and confront oppressive regimes on campus and in the classroom remains disputed,
+    Free to Speak asks: what forms of expression might solidarity take next?
