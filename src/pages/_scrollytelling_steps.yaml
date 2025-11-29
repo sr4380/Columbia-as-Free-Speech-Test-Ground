@@ -8,6 +8,7 @@
     Explore a century of student activism at Columbia University, mapping the campus spaces where forms of speech, protest, and dissent unfolded. 
     From 1917 World War I dissent, to the 1936 anti-Nazi protests, the 1968 anti-Vietnam War and Gym Crow uprising, the 1985 anti-apartheid movement, and today's Gaza solidarity movement, this map traces the physical sites where dissent has been expressed.
   media: ./img/intro2.jpg
+  mediaOpacity: 1 
 
 - title: 1917 World War I- Columbia Calls
   center: [-73.9670, 40.8085]
