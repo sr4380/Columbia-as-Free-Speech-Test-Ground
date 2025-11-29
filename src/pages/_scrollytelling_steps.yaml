@@ -4,7 +4,7 @@
   zoom: 11
   pitch: 0
   bearing: 0
-  description: On March 13th, 2025, Columbia student and president of Student Workers of Columbia-United Auto Workers, Grant Miner, was expelled and fired from job for participating in the protest movement against the ongoing genocide in Gaza. On August 1th, 2025, Palestinian-American historian Rashid Khalidi, the former Edward Said Professor of Modern Arab Studies, cancelled his course on modern Middle East History following Columbia’s adoption of the IHRA  definition of antisemitism which misleadingly conflates Jewish identity with the Israeli State and rendering teaching the subject with any honesty impossible. What does academic freedom mean when students face disciplinary consequences for standing up against genocide? What does it mean when faculty must withdraw courses to preserve their freedom to teach? To begin unpacking these questions, one must situate the present moment within Columbia University's long and complicated history of struggles over political expression and academic freedom.From 1917 World War I dissent, to the 1936 anti-Nazi protests, the 1968 anti-Vietnam War and Gym Crow uprising, the 1985 anti-apartheid movement, and today's Gaza solidarity movement, this map traces the physical sites where dissent has been expressed.
+  description: Explore a century of student activism at Columbia University, mapping the campus spaces where forms of speech, protest, and dissent unfolded. From 1917 World War I dissent, to the 1936 anti-Nazi protests, the 1968 anti-Vietnam War and Gym Crow uprising, the 1985 anti-apartheid movement, and today's Gaza solidarity movement, this map traces the physical sites where dissent has been expressed.
   media: ./img/intro2.jpg
   
 - title: 1917 World War I- Columbia Calls
@@ -188,6 +188,7 @@
         fill-extrusion-opacity: 1
 
 - title: Conclusion
+  style: '/style.json'
   center: [-74.100, 40.7800]
   zoom: 11
   pitch: 0
